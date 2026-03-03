@@ -1,3 +1,4 @@
+package graph;
 public class Wolf {
     private double[] position; // The wolf's position in the search space
     private double fitness;    // The objective function value
