@@ -45,8 +45,9 @@ public class Main {
         int numWolves = 10;
         int maxIterations = 10;
         int testDimension = 2;
-        double[] searchSpaceLowerBound = {3.8841,5.1098,12.9015,19.5538,28.9903,31.7764,40.1127};
-        double[] searchSpaceUpperBound = {45.8239,56.6710,67.4320,74.1299,81.2345,88.3471,92.0012};
+        //changed the length of the bounding arrays to match the dimensionality
+        double[] searchSpaceLowerBound = {3.8841,5.1098};
+        double[] searchSpaceUpperBound = {88.3471,92.0012};
         GWO tester = new GWO(numWolves, maxIterations, testDimension, searchSpaceLowerBound, searchSpaceUpperBound);
         long initTime = System.currentTimeMillis();
         tester.initializePopulation();
