@@ -26,7 +26,6 @@ public class GWO {
         wolfPack = new Wolf[numWolves];
         for (int i = 0; i < numWolves; i++) {
             wolfPack[i] = new Wolf(2, i);
-            //wolfPack[i].setPosition(searchSpaceLowerBound);position = new double[dimension];
             double[] newPosition = new double[dimension];
             for (int j = 0; j < dimension; j++) {
                 newPosition[j] = searchSpaceLowerBound[j] + rand.nextDouble() * 
@@ -34,7 +33,7 @@ public class GWO {
                 
             }
             wolfPack[i].setPosition(newPosition);
-            double newFitness = calculateFitness(wolfPack[i].getPosition()); // Your objective function
+            double newFitness = calculateFitness(wolfPack[i].getPosition()); // Main objective function for initializing fitness (done this way to make it clear)
             wolfPack[i].setFitness(newFitness);
         }
         sortWolvesByFitness();
@@ -84,7 +83,7 @@ public class GWO {
             // Average the positions to find the final new position
             newPosition[j] = (X1 + X2 + X3) / 3.0;
         
-            // Apply bounds checking (optional, but recommended)
+            // Apply bounds checking
             newPosition[j] = Math.max(newPosition[j], searchSpaceLowerBound[j]);
             newPosition[j] = Math.min(newPosition[j], searchSpaceUpperBound[j]);
         }
@@ -104,3 +103,4 @@ public class GWO {
 
 
 }
+
