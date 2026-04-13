@@ -1,0 +1,134 @@
+Group 7
+Yen's K-Shortest Paths vs Grey Wolf Optimizer
+Final Benchmark Run
+==================================================
+TEST CASE: SMALL
+Nodes: 10 | Extra Edges: 15
+Wolves: 10 | Iterations: 25
+==================================================
+Source: N0
+Destination: N9
+
+===== YEN BEFORE TRAFFIC =====
+Path 1: [N0, N1, N8, N9] | cost=44.00
+Path 2: [N0, N1, N2, N3, N7, N9] | cost=49.00
+Path 3: [N0, N1, N2, N3, N7, N8, N9] | cost=61.00
+Yen runtime before traffic: 4.741 ms
+Yen memory before traffic: 0.060 MB
+
+===== GWO BEFORE TRAFFIC =====
+path=[N0, N1, N2, N3, N4, N6, N7, N8, N9] | cost=63.00 | fitness=63.00 | reachedDestination=true
+Convergence history: [63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0, 63.0]
+GWO runtime before traffic: 9.879 ms
+GWO memory before traffic: 0.641 MB
+
+===== YEN AFTER TRAFFIC =====
+Path 1: [N0, N1, N2, N3, N7, N9] | cost=40.71
+Path 2: [N0, N1, N8, N9] | cost=52.44
+Path 3: [N0, N1, N2, N3, N4, N5, N9] | cost=58.70
+Yen runtime after traffic: 0.529 ms
+Yen memory after traffic: 0.040 MB
+
+===== GWO AFTER TRAFFIC =====
+path=[N0, N1, N2, N3, N4, N6, N7, N8, N9] | cost=85.71 | fitness=85.71 | reachedDestination=true
+Convergence history: [85.71204456048596, 60.53572459487092, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596, 85.71204456048596]
+GWO runtime after traffic: 1.570 ms
+GWO memory after traffic: 0.240 MB
+
+===== SUMMARY FOR SMALL =====
+Best Yen path before traffic cost: 44.00
+Best GWO path before traffic cost: 63.00
+Best Yen path after traffic cost: 40.71
+Best GWO path after traffic cost: 85.71
+Yen memory before traffic: 0.060 MB
+GWO memory before traffic: 0.641 MB
+Yen memory after traffic: 0.040 MB
+GWO memory after traffic: 0.240 MB
+
+==================================================
+TEST CASE: MEDIUM
+Nodes: 25 | Extra Edges: 50
+Wolves: 15 | Iterations: 40
+==================================================
+Source: N0
+Destination: N24
+
+===== YEN BEFORE TRAFFIC =====
+Path 1: [N0, N18, N12, N24] | cost=44.00
+Path 2: [N0, N1, N21, N22, N23, N24] | cost=54.00
+Path 3: [N0, N1, N21, N18, N12, N24] | cost=65.00
+Yen runtime before traffic: 1.250 ms
+Yen memory before traffic: 0.080 MB
+
+===== GWO BEFORE TRAFFIC =====
+path=[N0, N1, N2, N9, N14, N15, N16, N3, N4, N5, N17, N10, N11, N12, N24] | cost=84.00 | fitness=84.00 | reachedDestination=true
+Convergence history: [84.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0, 84.0]
+GWO runtime before traffic: 9.428 ms
+GWO memory before traffic: 0.921 MB
+
+===== YEN AFTER TRAFFIC =====
+Path 1: [N0, N18, N12, N24] | cost=37.24
+Path 2: [N0, N1, N21, N22, N23, N24] | cost=51.59
+Path 3: [N0, N1, N21, N18, N12, N24] | cost=56.86
+Yen runtime after traffic: 0.684 ms
+Yen memory after traffic: 0.080 MB
+
+===== GWO AFTER TRAFFIC =====
+path=[N0, N1, N2, N3, N4, N5, N17, N10, N11, N12, N24] | cost=59.01 | fitness=59.01 | reachedDestination=true
+Convergence history: [59.00516499686616, 37.24324136063895, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616, 59.00516499686616]
+GWO runtime after traffic: 4.448 ms
+GWO memory after traffic: 0.602 MB
+
+===== SUMMARY FOR MEDIUM =====
+Best Yen path before traffic cost: 44.00
+Best GWO path before traffic cost: 84.00
+Best Yen path after traffic cost: 37.24
+Best GWO path after traffic cost: 59.01
+Yen memory before traffic: 0.080 MB
+GWO memory before traffic: 0.921 MB
+Yen memory after traffic: 0.080 MB
+GWO memory after traffic: 0.602 MB
+
+==================================================
+TEST CASE: LARGE
+Nodes: 50 | Extra Edges: 120
+Wolves: 20 | Iterations: 60
+==================================================
+Source: N0
+Destination: N49
+
+===== YEN BEFORE TRAFFIC =====
+Path 1: [N0, N48, N49] | cost=22.00
+Path 2: [N0, N38, N49] | cost=37.00
+Path 3: [N0, N38, N16, N49] | cost=52.00
+Yen runtime before traffic: 1.006 ms
+Yen memory before traffic: 0.120 MB
+
+===== GWO BEFORE TRAFFIC =====
+path=[N0, N48, N12, N13, N30, N35, N28, N29, N47, N17, N18, N19, N20, N25, N26, N43, N44, N45, N46, N14, N15, N16, N49] | cost=134.00 | fitness=134.00 | reachedDestination=true
+Convergence history: [508.0, 157.0, 163.0, 146.0, 157.0, 157.0, 157.0, 157.0, 156.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 131.0, 134.0, 131.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0, 134.0]
+GWO runtime before traffic: 33.743 ms
+GWO memory before traffic: 2.083 MB
+
+===== YEN AFTER TRAFFIC =====
+Path 1: [N0, N38, N29, N47, N16, N49] | cost=42.79
+Path 2: [N0, N48, N49] | cost=43.01
+Path 3: [N0, N38, N49] | cost=45.57
+Yen runtime after traffic: 1.032 ms
+Yen memory after traffic: 0.152 MB
+
+===== GWO AFTER TRAFFIC =====
+path=[N0, N38, N29, N47, N17, N18, N19, N20, N25, N33, N46, N14, N15, N37, N6, N23, N42, N43, N10, N11, N12, N13, N30, N35, N39, N9, N4, N32, N3, N28, N7, N48, N49] | cost=310.84 | fitness=310.84 | reachedDestination=true
+Convergence history: [711.8266526470129, 740.9131922558804, 420.7299766855757, 434.19122560762986, 523.8884286708127, 289.2422033364068, 468.1898136332291, 298.9836184060132, 505.27478749011465, 240.17765171003018, 256.3232966661194, 254.9090606855987, 250.44738496665406, 210.14524361924282, 207.73807641691332, 207.73807641691332, 304.42178226902337, 242.4348049431149, 257.1761359355897, 257.1761359355897, 205.15113380246717, 205.15113380246717, 211.0018302010708, 205.15113380246717, 234.32695531142656, 234.32695531142656, 234.32695531142656, 234.32695531142656, 234.32695531142656, 234.32695531142656, 234.32695531142656, 234.32695531142656, 234.32695531142656, 234.32695531142656, 558.7682795813777, 377.94818810462465, 377.94818810462465, 377.94818810462465, 377.94818810462465, 377.94818810462465, 377.94818810462465, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824, 310.83732981007824]
+GWO runtime after traffic: 25.355 ms
+GWO memory after traffic: 0.475 MB
+
+===== SUMMARY FOR LARGE =====
+Best Yen path before traffic cost: 22.00
+Best GWO path before traffic cost: 134.00
+Best Yen path after traffic cost: 42.79
+Best GWO path after traffic cost: 310.84
+Yen memory before traffic: 0.120 MB
+GWO memory before traffic: 2.083 MB
+Yen memory after traffic: 0.152 MB
+GWO memory after traffic: 0.475 MB
